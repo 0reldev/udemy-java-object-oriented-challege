@@ -1,52 +1,52 @@
 public class BankAccount {
 
-    String accountNumber;
+    private String accountNumber;
 
-    double accountBalance = 0;
+    private double accountBalance = 0;
 
-    String customerName;
+    private String customerName;
 
-    String email;
+    private String email;
 
-    String phoneNumber;
+    private String phoneNumber;
 
-    public String getAccountNumber() {
+    private String getAccountNumber() {
         return accountNumber;
     }
 
-    public void setAccountNumber(String accountNumber) {
+    private void setAccountNumber(String accountNumber) {
         this.accountNumber = accountNumber;
     }
 
-    public double getAccountBalance() {
+    private double getAccountBalance() {
         return accountBalance;
     }
 
-    public void setAccountBalance(double accountBalance) {
+    private void setAccountBalance(double accountBalance) {
         this.accountBalance = accountBalance;
     }
 
-    public String getCustomerName() {
+    private String getCustomerName() {
         return customerName;
     }
 
-    public void setCustomerName(String customerName) {
+    private void setCustomerName(String customerName) {
         this.customerName = customerName;
     }
 
-    public String getEmail() {
+    private String getEmail() {
         return email;
     }
 
-    public void setEmail(String email) {
+    private void setEmail(String email) {
         this.email = email;
     }
 
-    public String getPhoneNumber() {
+    private String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
+    private void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
