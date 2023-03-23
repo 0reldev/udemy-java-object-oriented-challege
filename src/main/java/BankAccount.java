@@ -1,29 +1,24 @@
 public class BankAccount {
 
-    private String accountNumber;
-
-    private double accountBalance = 0;
-
+    private String number;
+    private double balance = 0;
     private String customerName;
-
     private String email;
-
     private String phoneNumber;
-
-    private String getAccountNumber() {
-        return accountNumber;
+    private String getNumber() {
+        return number;
     }
 
-    private void setAccountNumber(String accountNumber) {
-        this.accountNumber = accountNumber;
+    private void setNumber(String number) {
+        this.number = number;
     }
 
-    private double getAccountBalance() {
-        return accountBalance;
+    private double getBalance() {
+        return balance;
     }
 
-    private void setAccountBalance(double accountBalance) {
-        this.accountBalance = accountBalance;
+    private void setBalance(double balance) {
+        this.balance = balance;
     }
 
     private String getCustomerName() {
@@ -51,13 +46,13 @@ public class BankAccount {
     }
 
     public void depositFunds(double amount) {
-        this.accountBalance += amount;
+        balance += amount;
         System.out.println(amount + " have been deposited in the account.");
     }
 
     public void withdrawFunds(double amount) {
-        if (this.accountBalance > 0) {
-            this.accountBalance -= amount;
+        if (balance - amount >= 0) {
+            balance -= amount;
             System.out.println(amount + " have been withdrawn from the account.");
         } else {
             System.out.println("There is not enough money on the account. Cash can't be withdrawn.");
@@ -65,6 +60,6 @@ public class BankAccount {
     }
 
     public void checkAccount() {
-        System.out.println("There is " +  accountBalance + " in the account.");
+        System.out.println("There is " + balance + " in the account.");
     }
 }
