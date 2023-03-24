@@ -16,5 +16,12 @@ public class Main {
         BankAccount timsAccount = new BankAccount("Tim", "tim@test.fd", "0030600");
         System.out.println("Account No: " + timsAccount.getNumber() + ", name: " + timsAccount.getCustomerName());
 
+        // Tests for Customer class
+        Customer jean = new Customer();
+        jean.printInformation();
+        Customer eddie = new Customer("Eddie", "eddie@ed.ed");
+        eddie.printInformation();
+        Customer jack = new Customer("Jack", 1000.00, "afro.jack@j.fr");
+        jack.printInformation();
     }
 }
